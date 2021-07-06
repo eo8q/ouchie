@@ -1,0 +1,2700 @@
+--[[
+	Serenity V1.8.0
+	
+	-Created by:
+	Shade4Real#8929
+	
+	-Developed by:
+	Voltix#2172
+	
+	-Property of:
+	Lua Script Release
+	
+	-Lua Script Release (LSR) Discord:
+	>> https://discord.gg/awzyYHr <<
+	
+	-Voltix Development Team Discord:
+	>> https://discord.gg/fWvGqeb <<
+	
+	Commands for Chat Client can be found at the bottom of the script!
+	Additional Information and Q&A also found down there!
+	
+	-Secret Client Information:
+	6773-4372-2749-4829
+	-Secret Information:
+	Delta Neiner Seven Steve Echo Foxtrot Alpha Four Six
+	-Secret Key:
+	FEC@CT(&NWEDCoyuirlki43k@GOC*#@MN$&&@*(C-0fv3Y NPu34t2v9CHN(M&)GRVBr3iv)_<F#RVYGR
+	-Ignore The "Secret" information. Their for a later update. They store information!
+--]]
+--Show Loading
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "Serenity V1.8.0";
+Text = "Loading...\nMay take a second"
+game.Players:Chat(";spam name all Serenity Is Now Loading!")
+wait(4)
+game.Players:Chat(";spam name all Serenity Has Loaded!")
+wait(2)
+game.Players:Chat(";stop")
+})
+--End Loading Show
+local Serenity = Instance.new("ScreenGui")
+local Stats = Instance.new("Frame")
+local label = Instance.new("TextLabel")
+local spi = Instance.new("TextLabel")
+local label_2 = Instance.new("TextLabel")
+local OwnerOnly = Instance.new("Frame")
+local hfefh57tf = Instance.new("TextLabel")
+local c6h45esrty = Instance.new("TextLabel")
+local button = Instance.new("TextButton")
+local button_2 = Instance.new("TextButton")
+local button_3 = Instance.new("TextButton")
+local button_4 = Instance.new("TextButton")
+local button_5 = Instance.new("TextButton")
+local button_6 = Instance.new("TextButton")
+local MainMenu = Instance.new("Frame")
+local hfefh57tf_2 = Instance.new("TextLabel")
+local c6h45esrty_2 = Instance.new("TextLabel")
+local button_7 = Instance.new("TextButton")
+local vrm9wFC4m = Instance.new("ImageLabel")
+local button_8 = Instance.new("TextButton")
+local button_9 = Instance.new("TextButton")
+local button_10 = Instance.new("TextButton")
+local button_11 = Instance.new("TextButton")
+local button_12 = Instance.new("TextButton")
+local MusicMenu = Instance.new("Frame")
+local hfefh57tf_3 = Instance.new("TextLabel")
+local c6h45esrty_3 = Instance.new("TextLabel")
+local button_13 = Instance.new("TextButton")
+local button_14 = Instance.new("TextButton")
+local button_15 = Instance.new("TextButton")
+local button_16 = Instance.new("TextButton")
+local button_17 = Instance.new("TextButton")
+local button_18 = Instance.new("TextButton")
+local button_19 = Instance.new("TextButton")
+local button_20 = Instance.new("TextButton")
+local button_21 = Instance.new("TextButton")
+local button_22 = Instance.new("TextButton")
+local button_23 = Instance.new("TextButton")
+local button_24 = Instance.new("TextButton")
+local button_25 = Instance.new("TextButton")
+local button_26 = Instance.new("TextButton")
+local button_27 = Instance.new("TextButton")
+local button_28 = Instance.new("TextButton")
+local button_29 = Instance.new("TextButton")
+local button_30 = Instance.new("TextButton")
+local button_31 = Instance.new("TextButton")
+local button_32 = Instance.new("TextButton")
+local button_33 = Instance.new("TextButton")
+local button_34 = Instance.new("TextButton")
+local button_35 = Instance.new("TextButton")
+local button_36 = Instance.new("TextButton")
+local button_37 = Instance.new("TextButton")
+local button_38 = Instance.new("TextButton")
+local button_39 = Instance.new("TextButton")
+local PlayerOptions = Instance.new("Frame")
+local hfefh57tf_4 = Instance.new("TextLabel")
+local c6h45esrty_4 = Instance.new("TextLabel")
+local button_40 = Instance.new("TextButton")
+local button_41 = Instance.new("TextButton")
+local button_42 = Instance.new("TextButton")
+local button_43 = Instance.new("TextButton")
+local WorldOptions = Instance.new("Frame")
+local hfefh57tf_5 = Instance.new("TextLabel")
+local c6h45esrty_5 = Instance.new("TextLabel")
+local button_44 = Instance.new("TextButton")
+local button_45 = Instance.new("TextButton")
+local button_46 = Instance.new("TextButton")
+local button_47 = Instance.new("TextButton")
+local button_48 = Instance.new("TextButton")
+local TeleportOptions = Instance.new("Frame")
+local hfefh57tf_6 = Instance.new("TextLabel")
+local c6h45esrty_6 = Instance.new("TextLabel")
+local button_49 = Instance.new("TextButton")
+local button_50 = Instance.new("TextButton")
+local button_51 = Instance.new("TextButton")
+local button_52 = Instance.new("TextButton")
+local button_53 = Instance.new("TextButton")
+local button_54 = Instance.new("TextButton")
+local GearMenu = Instance.new("Frame")
+local hfefh57tf_7 = Instance.new("TextLabel")
+local c6h45esrty_7 = Instance.new("TextLabel")
+local button_55 = Instance.new("TextButton")
+local button_56 = Instance.new("TextButton")
+local button_57 = Instance.new("TextButton")
+local button_58 = Instance.new("TextButton")
+local button_59 = Instance.new("TextButton")
+local button_60 = Instance.new("TextButton")
+local button_61 = Instance.new("TextButton")
+local button_62 = Instance.new("TextButton")
+local button_63 = Instance.new("TextButton")
+local button_64 = Instance.new("TextButton")
+local button_65 = Instance.new("TextButton")
+local Logo = Instance.new("Frame")
+local f7jh4eiu = Instance.new("ImageLabel")
+local Players = game:GetService("Players")
+local Player = Players.LocalPlayer
+local Mouse = Player:GetMouse()
+local op1 = false
+local scriptname = "Serenity"
+local Ver = "1.8.0"
+local sss = 0.1
+local pss = false
+local lrp = true
+local TopLogo = Instance.new("Frame")
+local LSRLogo = Instance.new("ImageLabel")
+local UIT = 0.350
+
+--Logo Start
+Logo.Name = "Logo"
+Logo.Parent = Serenity
+Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo.BackgroundTransparency = 1.000
+Logo.BorderColor3 = Color3.fromRGB(250, 255, 0)
+Logo.Position = UDim2.new(0.5, -100, 0.5, -100)
+Logo.Size = UDim2.new(0, 200, 0, 200)
+Logo.Visible = false
+
+f7jh4eiu.Name = "f7jh4eiu"
+f7jh4eiu.Parent = Logo
+f7jh4eiu.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+f7jh4eiu.BackgroundTransparency = 1.000
+f7jh4eiu.BorderColor3 = Color3.fromRGB(250, 255, 0)
+f7jh4eiu.Size = UDim2.new(1, 0, 1, 0)
+f7jh4eiu.Image = "http://www.roblox.com/asset/?id=4892777151"
+f7jh4eiu.Visible = false
+f7jh4eiu.ImageTransparency = 0
+wait(0.500)
+Logo.f7jh4eiu:Destroy()
+--Logo End
+
+--TopLogo Start
+TopLogo.Name = "TopLogo"
+TopLogo.Parent = Serenity
+TopLogo.Position = UDim2.new(0, 0,1, -100)
+TopLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TopLogo.BackgroundTransparency = 1.000
+TopLogo.BorderColor3 = Color3.fromRGB(250, 255, 0)
+TopLogo.Size = UDim2.new(0, 100, 0, 100)
+TopLogo.Visible = true
+
+LSRLogo.Name = "LSRLogo"
+LSRLogo.Parent = TopLogo
+LSRLogo.Position = UDim2.new(0,0,0,0)
+LSRLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LSRLogo.BackgroundTransparency = 1.000
+LSRLogo.BorderColor3 = Color3.fromRGB(250, 255, 0)
+LSRLogo.Size = UDim2.new(1, 0, 1, 0)
+LSRLogo.Image = "http://www.roblox.com/asset/?id=4892777147"
+LSRLogo.Visible = true
+
+--Logo Fade Feature Start
+--loadstring(game:HttpGet((""), true))()
+--Logo Fade Feature End
+--TopLogo End
+
+--ScreenGui Settings Start
+Serenity.Name = "Serenity"
+Serenity.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Serenity.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Serenity.ResetOnSpawn = false
+MainMenu.Visible = false
+MusicMenu.Visible = false
+OwnerOnly.Visible = false
+PlayerOptions.Visible = false
+TeleportOptions.Visible = false
+WorldOptions.Visible = false
+GearMenu.Visible = false
+MainMenu.Active = true
+MusicMenu.Active = true
+OwnerOnly.Active = true
+PlayerOptions.Active = true
+TeleportOptions.Active = true
+WorldOptions.Active = true
+GearMenu.Active = true
+--ScreenGui Settings End
+
+--Stats Page Start
+Stats.Name = "Stats"
+Stats.Parent = Serenity
+Stats.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Stats.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Stats.Position = UDim2.new(0, 10, 1, -105)
+Stats.Size = UDim2.new(0, 200, 0, 95)
+Stats.Visible = false
+
+label.Name = "label"
+label.Parent = Stats
+label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+label.BackgroundTransparency = 1.000
+label.BorderColor3 = Color3.fromRGB(255, 0, 0)
+label.Position = UDim2.new(0, 0, -0.0022557308, 0)
+label.Size = UDim2.new(0, 200, 0, 15)
+label.Font = Enum.Font.SourceSans
+label.Text = "Whitelisted Players:"
+label.TextColor3 = Color3.fromRGB(255, 0, 0)
+label.TextSize = 15.000
+label.TextYAlignment = Enum.TextYAlignment.Top
+
+spi.Name = "spi"
+spi.Parent = Stats
+spi.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+spi.BackgroundTransparency = 1.000
+spi.BorderColor3 = Color3.fromRGB(255, 0, 0)
+spi.Position = UDim2.new(0, 0, 0.839849532, 0)
+spi.Size = UDim2.new(0, 200, 0, 15)
+spi.Font = Enum.Font.SourceSans
+spi.Text = "Spamming: NO"
+spi.TextColor3 = Color3.fromRGB(255, 0, 0)
+spi.TextSize = 15.000
+spi.TextYAlignment = Enum.TextYAlignment.Top
+
+label_2.Name = "label"
+label_2.Parent = Stats
+label_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+label_2.BackgroundTransparency = 1.000
+label_2.BorderColor3 = Color3.fromRGB(255, 0, 0)
+label_2.Position = UDim2.new(0, 0, 0.292481124, 0)
+label_2.Rotation = 25.000
+label_2.Size = UDim2.new(0, 200, 0, 38)
+label_2.Font = Enum.Font.SourceSans
+label_2.Text = "COMING SOON!"
+label_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+label_2.TextSize = 18.000
+--Stats Page End
+
+--OwnerOnly Start
+OwnerOnly.Name = "OwnerOnly"
+OwnerOnly.Parent = Serenity
+OwnerOnly.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+OwnerOnly.BackgroundTransparency = UIT
+OwnerOnly.BorderColor3 = Color3.fromRGB(255, 0, 0)
+OwnerOnly.Position = UDim2.new(0, 5,0.5, -130)
+OwnerOnly.Size = UDim2.new(0, 250, 0, 350)
+OwnerOnly.Visible = false
+OwnerOnly.Draggable = true
+
+hfefh57tf.Name = "hfefh57tf"
+hfefh57tf.Parent = OwnerOnly
+hfefh57tf.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+hfefh57tf.BackgroundTransparency = 1.000
+hfefh57tf.BorderColor3 = Color3.fromRGB(250, 255, 0)
+hfefh57tf.Size = UDim2.new(0, 250, 0, 25)
+hfefh57tf.Font = Enum.Font.SourceSans
+hfefh57tf.Text = scriptname.." V"..Ver
+hfefh57tf.TextColor3 = Color3.fromRGB(255, 0, 0)
+hfefh57tf.TextSize = 18.000
+
+c6h45esrty.Name = "c6h45esrty"
+c6h45esrty.Parent = OwnerOnly
+c6h45esrty.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+c6h45esrty.BackgroundTransparency = 1.000
+c6h45esrty.BorderColor3 = Color3.fromRGB(255, 0, 0)
+c6h45esrty.Position = UDim2.new(0, 0, 0.0714285746, 0)
+c6h45esrty.Size = UDim2.new(0, 250, 0, 25)
+c6h45esrty.Font = Enum.Font.SourceSans
+c6h45esrty.Text = "Owner Only"
+c6h45esrty.TextColor3 = Color3.fromRGB(255, 0, 0)
+c6h45esrty.TextSize = 18.000
+
+button.Name = "button"
+button.Parent = OwnerOnly
+button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button.BackgroundTransparency = UIT
+button.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button.Position = UDim2.new(0, 15, 0, 60)
+button.Size = UDim2.new(0, 220, 0, 30)
+button.Font = Enum.Font.SourceSansBold
+button.Text = "Loop Reset Pads"
+button.TextColor3 = Color3.fromRGB(255, 0, 0)
+button.TextSize = 14.000
+button.TextWrapped = true
+button.MouseButton1Click:connect(function()
+	if lrp == true then
+		lrp = false
+		pss = false
+		button_44.Text = "Loop Reset Pads"
+		button.Text = "Loop Reset Pads"
+		nps()
+	end
+	if lrp == false then
+		lrp = true
+		pss = true
+		button_44.Text = "Un-Loop Reset Pads"
+		button.Text = "Un-Loop Reset Pads"
+	end
+end)
+
+button_2.Name = "button"
+button_2.Parent = OwnerOnly
+button_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_2.BackgroundTransparency = UIT
+button_2.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_2.Position = UDim2.new(0, 15, 0, 140)
+button_2.Size = UDim2.new(0, 220, 0, 30)
+button_2.Font = Enum.Font.SourceSansBold
+button_2.Text = "Get All Admin Pads"
+button_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_2.TextSize = 14.000
+button_2.TextWrapped = true
+button_2.MouseButton1Click:connect(function()
+	gap()
+end)
+
+button_3.Name = "button"
+button_3.Parent = OwnerOnly
+button_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_3.BackgroundTransparency = UIT
+button_3.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_3.Position = UDim2.new(0, 15, 0, 100)
+button_3.Size = UDim2.new(0, 220, 0, 30)
+button_3.Font = Enum.Font.SourceSansBold
+button_3.Text = "Attempt Game Crash"
+button_3.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_3.TextSize = 14.000
+button_3.TextWrapped = true
+button_3.MouseButton1Click:connect(function()
+	cra()
+end)
+
+button_4.Name = "button"
+button_4.Parent = OwnerOnly
+button_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_4.BackgroundTransparency = UIT
+button_4.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_4.Position = UDim2.new(0, 15, 0, 180)
+button_4.Size = UDim2.new(0, 220, 0, 30)
+button_4.Font = Enum.Font.SourceSansBold
+button_4.Text = "Unblindable"
+button_4.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_4.TextSize = 14.000
+button_4.TextWrapped = true
+button_4.MouseButton1Click:connect(function()
+	unblindable()
+end)
+
+button_5.Name = "button"
+button_5.Parent = OwnerOnly
+button_5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_5.BackgroundTransparency = UIT
+button_5.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_5.Position = UDim2.new(0, 15, 0, 300)
+button_5.Size = UDim2.new(0, 220, 0, 30)
+button_5.Font = Enum.Font.SourceSansBold
+button_5.Text = "Go Back To Main Menu"
+button_5.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_5.TextSize = 14.000
+button_5.TextWrapped = true
+button_5.MouseButton1Click:connect(function()
+	OwnerOnly.Visible = false
+	MainMenu.Visible = true
+end)
+
+button_6.Name = "button"
+button_6.Parent = OwnerOnly
+button_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_6.BackgroundTransparency = UIT
+button_6.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_6.Position = UDim2.new(0, 15, 0, 220)
+button_6.Size = UDim2.new(0, 220, 0, 30)
+button_6.Font = Enum.Font.SourceSansBold
+button_6.Text = "Whitelist Menu <-Coming Soon"
+button_6.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_6.TextSize = 14.000
+button_6.TextWrapped = true
+--OwnerOnly End
+
+--MainMenu Start
+MainMenu.Name = "MainMenu"
+MainMenu.Parent = Serenity
+MainMenu.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MainMenu.BackgroundTransparency = UIT
+MainMenu.BorderColor3 = Color3.fromRGB(255, 0, 0)
+MainMenu.Position = UDim2.new(0, 5,0.5, -130)
+MainMenu.Size = UDim2.new(0, 250, 0, 350)
+MainMenu.Visible = false
+MainMenu.Draggable = true
+
+hfefh57tf_2.Name = "hfefh57tf"
+hfefh57tf_2.Parent = MainMenu
+hfefh57tf_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+hfefh57tf_2.BackgroundTransparency = 1.000
+hfefh57tf_2.BorderColor3 = Color3.fromRGB(250, 255, 0)
+hfefh57tf_2.Position = UDim2.new(0.25999999, 0, 0, 0)
+hfefh57tf_2.Size = UDim2.new(0, 185, 0, 25)
+hfefh57tf_2.Font = Enum.Font.SourceSans
+hfefh57tf_2.Text = scriptname.." V"..Ver
+hfefh57tf_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+hfefh57tf_2.TextSize = 18.000
+hfefh57tf_2.TextXAlignment = Enum.TextXAlignment.Left
+
+c6h45esrty_2.Name = "c6h45esrty"
+c6h45esrty_2.Parent = MainMenu
+c6h45esrty_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+c6h45esrty_2.BackgroundTransparency = 1.000
+c6h45esrty_2.BorderColor3 = Color3.fromRGB(255, 0, 0)
+c6h45esrty_2.Position = UDim2.new(0.25999999, 0, 0.0714285746, 0)
+c6h45esrty_2.Size = UDim2.new(0, 185, 0, 25)
+c6h45esrty_2.Font = Enum.Font.SourceSans
+c6h45esrty_2.Text = "Created by: Voltix#2172"
+c6h45esrty_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+c6h45esrty_2.TextSize = 18.000
+c6h45esrty_2.TextXAlignment = Enum.TextXAlignment.Left
+
+button_7.Name = "button"
+button_7.Parent = MainMenu
+button_7.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_7.BackgroundTransparency = UIT
+button_7.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_7.Position = UDim2.new(0, 15, 0, 60)
+button_7.Size = UDim2.new(0, 220, 0, 30)
+button_7.Font = Enum.Font.SourceSansBold
+button_7.Text = "Owner Only"
+button_7.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_7.TextSize = 14.000
+button_7.TextWrapped = true
+button_7.MouseButton1Click:connect(function()
+	OwnerOnly.Visible = true
+	MainMenu.Visible = false
+end)
+
+vrm9wFC4m.Name = "vrm9wFC4m"
+vrm9wFC4m.Parent = MainMenu
+vrm9wFC4m.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+vrm9wFC4m.BackgroundTransparency = 1.000
+vrm9wFC4m.BorderColor3 = Color3.fromRGB(255, 0, 0)
+vrm9wFC4m.Size = UDim2.new(0.200000003, 0, 0.142857149, 0)
+vrm9wFC4m.Image = "http://www.roblox.com/asset/?id=4892777147"
+
+button_8.Name = "button"
+button_8.Parent = MainMenu
+button_8.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_8.BackgroundTransparency = UIT
+button_8.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_8.Position = UDim2.new(0, 15, 0, 140)
+button_8.Size = UDim2.new(0, 220, 0, 30)
+button_8.Font = Enum.Font.SourceSansBold
+button_8.Text = "Player Options"
+button_8.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_8.TextSize = 14.000
+button_8.TextWrapped = true
+button_8.MouseButton1Click:connect(function()
+	PlayerOptions.Visible = true
+	MainMenu.Visible = false
+end)
+
+button_9.Name = "button"
+button_9.Parent = MainMenu
+button_9.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_9.BackgroundTransparency = UIT
+button_9.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_9.Position = UDim2.new(0, 15, 0, 100)
+button_9.Size = UDim2.new(0, 220, 0, 30)
+button_9.Font = Enum.Font.SourceSansBold
+button_9.Text = "Music Menu"
+button_9.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_9.TextSize = 14.000
+button_9.TextWrapped = true
+button_9.MouseButton1Click:connect(function()
+	MusicMenu.Visible = true
+	MainMenu.Visible = false
+end)
+
+button_10.Name = "button"
+button_10.Parent = MainMenu
+button_10.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_10.BackgroundTransparency = UIT
+button_10.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_10.Position = UDim2.new(0, 15, 0, 180)
+button_10.Size = UDim2.new(0, 220, 0, 30)
+button_10.Font = Enum.Font.SourceSansBold
+button_10.Text = "Gear Menu"
+button_10.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_10.TextSize = 14.000
+button_10.TextWrapped = true
+button_10.MouseButton1Click:connect(function()
+	GearMenu.Visible = true
+	MainMenu.Visible = false
+end)
+
+button_11.Name = "button"
+button_11.Parent = MainMenu
+button_11.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_11.BackgroundTransparency = UIT
+button_11.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_11.Position = UDim2.new(0, 15, 0, 220)
+button_11.Size = UDim2.new(0, 220, 0, 30)
+button_11.Font = Enum.Font.SourceSansBold
+button_11.Text = "World Options"
+button_11.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_11.TextSize = 14.000
+button_11.TextWrapped = true
+button_11.MouseButton1Click:connect(function()
+	WorldOptions.Visible = true
+	MainMenu.Visible = false
+end)
+
+button_12.Name = "button"
+button_12.Parent = MainMenu
+button_12.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_12.BackgroundTransparency = UIT
+button_12.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_12.Position = UDim2.new(0, 15, 0, 260)
+button_12.Size = UDim2.new(0, 220, 0, 30)
+button_12.Font = Enum.Font.SourceSansBold
+button_12.Text = "Teleport Locations"
+button_12.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_12.TextSize = 14.000
+button_12.TextWrapped = true
+button_12.MouseButton1Click:connect(function()
+	TeleportOptions.Visible = true
+	MainMenu.Visible = false
+end)
+--MainMenu End
+
+--MusicMenu Begin
+MusicMenu.Name = "MusicMenu"
+MusicMenu.Parent = Serenity
+MusicMenu.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MusicMenu.BackgroundTransparency = UIT
+MusicMenu.BorderColor3 = Color3.fromRGB(255, 0, 0)
+MusicMenu.Position = UDim2.new(0, 5,0.5, -130)
+MusicMenu.Size = UDim2.new(0, 490, 0, 350)
+MusicMenu.Visible = false
+MusicMenu.Draggable = true
+
+hfefh57tf_3.Name = "hfefh57tf"
+hfefh57tf_3.Parent = MusicMenu
+hfefh57tf_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+hfefh57tf_3.BackgroundTransparency = 1.000
+hfefh57tf_3.BorderColor3 = Color3.fromRGB(250, 255, 0)
+hfefh57tf_3.Size = UDim2.new(0, 500, 0, 25)
+hfefh57tf_3.Font = Enum.Font.SourceSans
+hfefh57tf_3.Text = scriptname.." V"..Ver
+hfefh57tf_3.TextColor3 = Color3.fromRGB(255, 0, 0)
+hfefh57tf_3.TextSize = 18.000
+
+c6h45esrty_3.Name = "c6h45esrty"
+c6h45esrty_3.Parent = MusicMenu
+c6h45esrty_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+c6h45esrty_3.BackgroundTransparency = 1.000
+c6h45esrty_3.BorderColor3 = Color3.fromRGB(255, 0, 0)
+c6h45esrty_3.Position = UDim2.new(0, 0, 0.0714285746, 0)
+c6h45esrty_3.Size = UDim2.new(0, 500, 0, 25)
+c6h45esrty_3.Font = Enum.Font.SourceSans
+c6h45esrty_3.Text = "Music Menu"
+c6h45esrty_3.TextColor3 = Color3.fromRGB(255, 0, 0)
+c6h45esrty_3.TextSize = 18.000
+
+button_13.Name = "button"
+button_13.Parent = MusicMenu
+button_13.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_13.BackgroundTransparency = UIT
+button_13.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_13.Position = UDim2.new(0, 15, 0, 60)
+button_13.Size = UDim2.new(0, 100, 0, 30)
+button_13.Font = Enum.Font.SourceSansBold
+button_13.Text = "Thunder - Imagine Dragons"
+button_13.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_13.TextSize = 14.000
+button_13.TextWrapped = true
+button_13.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("music 2653366831"))
+end)
+
+button_14.Name = "button"
+button_14.Parent = MusicMenu
+button_14.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_14.BackgroundTransparency = UIT
+button_14.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_14.Position = UDim2.new(0, 15, 0, 140)
+button_14.Size = UDim2.new(0, 100, 0, 30)
+button_14.Font = Enum.Font.SourceSansBold
+button_14.Text = "On & On"
+button_14.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_14.TextSize = 14.000
+button_14.TextWrapped = true
+button_14.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("music 603146550"))
+end)
+
+button_15.Name = "button"
+button_15.Parent = MusicMenu
+button_15.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_15.BackgroundTransparency = UIT
+button_15.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_15.Position = UDim2.new(0, 15, 0, 100)
+button_15.Size = UDim2.new(0, 100, 0, 30)
+button_15.Font = Enum.Font.SourceSansBold
+button_15.Text = "Spotlight - Lil Peep x Marshmellow"
+button_15.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_15.TextSize = 14.000
+button_15.TextWrapped = true
+button_15.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("music 1416455255"))
+end)
+
+button_16.Name = "button"
+button_16.Parent = MusicMenu
+button_16.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_16.BackgroundTransparency = UIT
+button_16.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_16.Position = UDim2.new(0, 15, 0, 180)
+button_16.Size = UDim2.new(0, 100, 0, 30)
+button_16.Font = Enum.Font.SourceSansBold
+button_16.Text = "R.I.P. Juice"
+button_16.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_16.TextSize = 14.000
+button_16.TextWrapped = true
+button_16.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("music 4773093598"))
+end)
+
+button_17.Name = "button"
+button_17.Parent = MusicMenu
+button_17.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_17.BackgroundTransparency = UIT
+button_17.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_17.Position = UDim2.new(0, 15, 0, 300)
+button_17.Size = UDim2.new(0, 220, 0, 30)
+button_17.Font = Enum.Font.SourceSansBold
+button_17.Text = "Go Back To Main Menu"
+button_17.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_17.TextSize = 14.000
+button_17.TextWrapped = true
+button_17.MouseButton1Click:connect(function()
+	MusicMenu.Visible = false
+	MainMenu.Visible = true
+end)
+
+button_18.Name = "button"
+button_18.Parent = MusicMenu
+button_18.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_18.BackgroundTransparency = UIT
+button_18.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_18.Position = UDim2.new(0, 15, 0, 220)
+button_18.Size = UDim2.new(0, 100, 0, 30)
+button_18.Font = Enum.Font.SourceSansBold
+button_18.Text = "Panini"
+button_18.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_18.TextSize = 14.000
+button_18.TextWrapped = true
+button_18.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("music 3340674075"))
+end)
+
+button_19.Name = "button"
+button_19.Parent = MusicMenu
+button_19.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_19.BackgroundTransparency = UIT
+button_19.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_19.Position = UDim2.new(0, 15, 0, 260)
+button_19.Size = UDim2.new(0, 100, 0, 30)
+button_19.Font = Enum.Font.SourceSansBold
+button_19.Text = "End of the Bacon Hairs"
+button_19.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_19.TextSize = 14.000
+button_19.TextWrapped = true
+button_19.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("music 4880331244"))
+end)
+
+button_20.Name = "button"
+button_20.Parent = MusicMenu
+button_20.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_20.BackgroundTransparency = UIT
+button_20.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_20.Position = UDim2.new(0, 135, 0, 260)
+button_20.Size = UDim2.new(0, 100, 0, 30)
+button_20.Font = Enum.Font.SourceSansBold
+button_20.Text = "Heaven - Jordan Copas"
+button_20.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_20.TextSize = 14.000
+button_20.TextWrapped = true
+button_20.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("music 709323742"))
+end)
+
+button_21.Name = "button"
+button_21.Parent = MusicMenu
+button_21.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_21.BackgroundTransparency = UIT
+button_21.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_21.Position = UDim2.new(0, 135, 0, 220)
+button_21.Size = UDim2.new(0, 100, 0, 30)
+button_21.Font = Enum.Font.SourceSansBold
+button_21.Text = "The Next Episode - Dr. Dre"
+button_21.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_21.TextSize = 14.000
+button_21.TextWrapped = true
+button_21.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("music 908353739"))
+end)
+
+button_22.Name = "button"
+button_22.Parent = MusicMenu
+button_22.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_22.BackgroundTransparency = UIT
+button_22.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_22.Position = UDim2.new(0, 135, 0, 180)
+button_22.Size = UDim2.new(0, 100, 0, 30)
+button_22.Font = Enum.Font.SourceSansBold
+button_22.Text = "I Like Trains"
+button_22.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_22.TextSize = 14.000
+button_22.TextWrapped = true
+button_22.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("music 131072261"))
+end)
+
+button_23.Name = "button"
+button_23.Parent = MusicMenu
+button_23.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_23.BackgroundTransparency = UIT
+button_23.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_23.Position = UDim2.new(0, 135, 0, 140)
+button_23.Size = UDim2.new(0, 100, 0, 30)
+button_23.Font = Enum.Font.SourceSansBold
+button_23.Text = "Louis"
+button_23.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_23.TextSize = 14.000
+button_23.TextWrapped = true
+button_23.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("music 4741387540"))
+end)
+
+button_24.Name = "button"
+button_24.Parent = MusicMenu
+button_24.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_24.BackgroundTransparency = UIT
+button_24.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_24.Position = UDim2.new(0, 135, 0, 100)
+button_24.Size = UDim2.new(0, 100, 0, 30)
+button_24.Font = Enum.Font.SourceSansBold
+button_24.Text = "Spectre - Alan Walker"
+button_24.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_24.TextSize = 14.000
+button_24.TextWrapped = true
+button_24.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("music 1088486530"))
+end)
+
+button_25.Name = "button"
+button_25.Parent = MusicMenu
+button_25.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_25.BackgroundTransparency = UIT
+button_25.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_25.Position = UDim2.new(0, 135, 0, 60)
+button_25.Size = UDim2.new(0, 100, 0, 30)
+button_25.Font = Enum.Font.SourceSansBold
+button_25.Text = "Force - Alan Walker"
+button_25.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_25.TextSize = 14.000
+button_25.TextWrapped = true
+button_25.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("music 644914256"))
+end)
+
+button_26.Name = "button"
+button_26.Parent = MusicMenu
+button_26.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_26.BackgroundTransparency = UIT
+button_26.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_26.Position = UDim2.new(0, 255, 0, 60)
+button_26.Size = UDim2.new(0, 100, 0, 30)
+button_26.Font = Enum.Font.SourceSansBold
+button_26.Text = "Hello - OMFG"
+button_26.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_26.TextSize = 14.000
+button_26.TextWrapped = true
+button_26.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("music 214902446"))
+end)
+
+button_27.Name = "button"
+button_27.Parent = MusicMenu
+button_27.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_27.BackgroundTransparency = UIT
+button_27.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_27.Position = UDim2.new(0, 255, 0, 100)
+button_27.Size = UDim2.new(0, 100, 0, 30)
+button_27.Font = Enum.Font.SourceSansBold
+button_27.Text = "I Love You  - OMFG"
+button_27.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_27.TextSize = 14.000
+button_27.TextWrapped = true
+button_27.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("music 225000651"))
+end)
+
+button_28.Name = "button"
+button_28.Parent = MusicMenu
+button_28.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_28.BackgroundTransparency = UIT
+button_28.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_28.Position = UDim2.new(0, 255, 0, 140)
+button_28.Size = UDim2.new(0, 100, 0, 30)
+button_28.Font = Enum.Font.SourceSansBold
+button_28.Text = "Creeper, AW  MAN!"
+button_28.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_28.TextSize = 14.000
+button_28.TextWrapped = true
+button_28.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("music 3807239428"))
+	wait(3.65)
+	game:GetService'Players':Chat(("m Creeper, Aww Man!!"))
+	game:GetService'Players':Chat(("creeper all"))
+end)
+
+button_29.Name = "button"
+button_29.Parent = MusicMenu
+button_29.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_29.BackgroundTransparency = UIT
+button_29.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_29.Position = UDim2.new(0, 255, 0, 180)
+button_29.Size = UDim2.new(0, 100, 0, 30)
+button_29.Font = Enum.Font.SourceSansBold
+button_29.Text = "KFC is Illuminati Confirmed"
+button_29.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_29.TextSize = 14.000
+button_29.TextWrapped = true
+button_29.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("music 205254380"))
+end)
+
+button_30.Name = "button"
+button_30.Parent = MusicMenu
+button_30.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_30.BackgroundTransparency = UIT
+button_30.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_30.Position = UDim2.new(0, 255, 0, 220)
+button_30.Size = UDim2.new(0, 100, 0, 30)
+button_30.Font = Enum.Font.SourceSansBold
+button_30.Text = "Rick Roll"
+button_30.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_30.TextSize = 14.000
+button_30.TextWrapped = true
+button_30.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("music 4662452515"))
+end)
+
+button_31.Name = "button"
+button_31.Parent = MusicMenu
+button_31.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_31.BackgroundTransparency = UIT
+button_31.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_31.Position = UDim2.new(0, 255, 0, 260)
+button_31.Size = UDim2.new(0, 100, 0, 30)
+button_31.Font = Enum.Font.SourceSansBold
+button_31.Text = "Monsters Inc. EARRAPE"
+button_31.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_31.TextSize = 14.000
+button_31.TextWrapped = true
+button_31.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("music 4567090901"))
+end)
+
+button_32.Name = "button"
+button_32.Parent = MusicMenu
+button_32.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_32.BackgroundTransparency = UIT
+button_32.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_32.Position = UDim2.new(0, 375, 0, 260)
+button_32.Size = UDim2.new(0, 100, 0, 30)
+button_32.Font = Enum.Font.SourceSansBold
+button_32.Text = "Moonlight - XXXTENTACION"
+button_32.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_32.TextSize = 14.000
+button_32.TextWrapped = true
+button_32.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("music 1678047143"))
+end)
+
+button_33.Name = "button"
+button_33.Parent = MusicMenu
+button_33.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_33.BackgroundTransparency = UIT
+button_33.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_33.Position = UDim2.new(0, 375, 0, 220)
+button_33.Size = UDim2.new(0, 100, 0, 30)
+button_33.Font = Enum.Font.SourceSansBold
+button_33.Text = "Dance Monkey - Tones And I"
+button_33.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_33.TextSize = 14.000
+button_33.TextWrapped = true
+button_33.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("music 4532362987"))
+end)
+
+button_34.Name = "button"
+button_34.Parent = MusicMenu
+button_34.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_34.BackgroundTransparency = UIT
+button_34.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_34.Position = UDim2.new(0, 375, 0, 180)
+button_34.Size = UDim2.new(0, 100, 0, 30)
+button_34.Font = Enum.Font.SourceSansBold
+button_34.Text = "Kazoo"
+button_34.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_34.TextSize = 14.000
+button_34.TextWrapped = true
+button_34.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("music 2430580736"))
+end)
+
+button_35.Name = "button"
+button_35.Parent = MusicMenu
+button_35.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_35.BackgroundTransparency = UIT
+button_35.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_35.Position = UDim2.new(0, 375, 0, 140)
+button_35.Size = UDim2.new(0, 100, 0, 30)
+button_35.Font = Enum.Font.SourceSansBold
+button_35.Text = "USSR Anthem"
+button_35.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_35.TextSize = 14.000
+button_35.TextWrapped = true
+button_35.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("music 1064109642"))
+end)
+
+button_36.Name = "button"
+button_36.Parent = MusicMenu
+button_36.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_36.BackgroundTransparency = UIT
+button_36.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_36.Position = UDim2.new(0, 375, 0, 100)
+button_36.Size = UDim2.new(0, 100, 0, 30)
+button_36.Font = Enum.Font.SourceSansBold
+button_36.Text = "Copycat - Billie Eilish"
+button_36.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_36.TextSize = 14.000
+button_36.TextWrapped = true
+button_36.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("music 1173506587"))
+end)
+
+button_37.Name = "button"
+button_37.Parent = MusicMenu
+button_37.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_37.BackgroundTransparency = UIT
+button_37.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_37.Position = UDim2.new(0, 375, 0, 60)
+button_37.Size = UDim2.new(0, 100, 0, 30)
+button_37.Font = Enum.Font.SourceSansBold
+button_37.Text = "Deathbed - Powfu"
+button_37.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_37.TextSize = 14.000
+button_37.TextWrapped = true
+button_37.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("music 3852221223"))
+end)
+
+button_38.Name = "button"
+button_38.Parent = MusicMenu
+button_38.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_38.BackgroundTransparency = UIT
+button_38.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_38.Position = UDim2.new(0, 255, 0, 300)
+button_38.Size = UDim2.new(0, 100, 0, 30)
+button_38.Font = Enum.Font.SourceSansBold
+button_38.Text = "Pornhub Community"
+button_38.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_38.TextSize = 14.000
+button_38.TextWrapped = true
+button_38.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("music 1930619595"))
+end)
+
+button_39.Name = "button"
+button_39.Parent = MusicMenu
+button_39.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_39.BackgroundTransparency = UIT
+button_39.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_39.Position = UDim2.new(0, 375, 0, 300)
+button_39.Size = UDim2.new(0, 100, 0, 30)
+button_39.Font = Enum.Font.SourceSansBold
+button_39.Text = "FBI"
+button_39.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_39.TextSize = 14.000
+button_39.TextWrapped = true
+button_39.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("music 2507128460"))
+end)
+--MusicMenu End
+
+--PlayerOptions Start
+PlayerOptions.Name = "PlayerOptions"
+PlayerOptions.Parent = Serenity
+PlayerOptions.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+PlayerOptions.BackgroundTransparency = UIT
+PlayerOptions.BorderColor3 = Color3.fromRGB(255, 0, 0)
+PlayerOptions.Position = UDim2.new(0, 5,0.5, -130)
+PlayerOptions.Size = UDim2.new(0, 250, 0, 350)
+PlayerOptions.Visible = false
+PlayerOptions.Draggable = true
+
+hfefh57tf_4.Name = "hfefh57tf"
+hfefh57tf_4.Parent = PlayerOptions
+hfefh57tf_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+hfefh57tf_4.BackgroundTransparency = 1.000
+hfefh57tf_4.BorderColor3 = Color3.fromRGB(250, 255, 0)
+hfefh57tf_4.Size = UDim2.new(0, 250, 0, 25)
+hfefh57tf_4.Font = Enum.Font.SourceSans
+hfefh57tf_4.Text = scriptname.." V"..Ver
+hfefh57tf_4.TextColor3 = Color3.fromRGB(255, 0, 0)
+hfefh57tf_4.TextSize = 18.000
+
+c6h45esrty_4.Name = "c6h45esrty"
+c6h45esrty_4.Parent = PlayerOptions
+c6h45esrty_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+c6h45esrty_4.BackgroundTransparency = 1.000
+c6h45esrty_4.BorderColor3 = Color3.fromRGB(255, 0, 0)
+c6h45esrty_4.Position = UDim2.new(0, 0, 0.0714285746, 0)
+c6h45esrty_4.Size = UDim2.new(0, 250, 0, 25)
+c6h45esrty_4.Font = Enum.Font.SourceSans
+c6h45esrty_4.Text = "Player Options"
+c6h45esrty_4.TextColor3 = Color3.fromRGB(255, 0, 0)
+c6h45esrty_4.TextSize = 18.000
+
+button_40.Name = "button"
+button_40.Parent = PlayerOptions
+button_40.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_40.BackgroundTransparency = UIT
+button_40.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_40.Position = UDim2.new(0, 15, 0, 60)
+button_40.Size = UDim2.new(0, 220, 0, 30)
+button_40.Font = Enum.Font.SourceSansBold
+button_40.Text = "Unblindable"
+button_40.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_40.TextSize = 14.000
+button_40.TextWrapped = true
+button_40.MouseButton1Click:connect(function()
+	unblindable()
+end)
+
+button_41.Name = "button"
+button_41.Parent = PlayerOptions
+button_41.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_41.BackgroundTransparency = UIT
+button_41.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_41.Position = UDim2.new(0, 15, 0, 140)
+button_41.Size = UDim2.new(0, 220, 0, 30)
+button_41.Font = Enum.Font.SourceSansBold
+button_41.Text = "Name all 'Serenity'"
+button_41.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_41.TextSize = 14.000
+button_41.TextWrapped = true
+button_41.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("name all Serenity"))
+end)
+
+button_42.Name = "button"
+button_42.Parent = PlayerOptions
+button_42.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_42.BackgroundTransparency = UIT
+button_42.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_42.Position = UDim2.new(0, 15, 0, 100)
+button_42.Size = UDim2.new(0, 220, 0, 30)
+button_42.Font = Enum.Font.SourceSansBold
+button_42.Text = "Walkspeed 80"
+button_42.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_42.TextSize = 14.000
+button_42.TextWrapped = true
+button_42.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("walkspeed me 80"))
+end)
+
+button_43.Name = "button"
+button_43.Parent = PlayerOptions
+button_43.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_43.BackgroundTransparency = UIT
+button_43.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_43.Position = UDim2.new(0, 15, 0, 300)
+button_43.Size = UDim2.new(0, 220, 0, 30)
+button_43.Font = Enum.Font.SourceSansBold
+button_43.Text = "Go Back To Main Menu"
+button_43.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_43.TextSize = 14.000
+button_43.TextWrapped = true
+button_43.MouseButton1Click:connect(function()
+	PlayerOptions.Visible = false
+	MainMenu.Visible = true
+end)
+--PlayerOptions End
+
+--WorldOptions Start
+WorldOptions.Name = "WorldOptions"
+WorldOptions.Parent = Serenity
+WorldOptions.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+WorldOptions.BackgroundTransparency = UIT
+WorldOptions.BorderColor3 = Color3.fromRGB(255, 0, 0)
+WorldOptions.Position = UDim2.new(0, 5,0.5, -130)
+WorldOptions.Size = UDim2.new(0, 250, 0, 350)
+WorldOptions.Visible = false
+WorldOptions.Draggable = true
+
+hfefh57tf_5.Name = "hfefh57tf"
+hfefh57tf_5.Parent = WorldOptions
+hfefh57tf_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+hfefh57tf_5.BackgroundTransparency = 1.000
+hfefh57tf_5.BorderColor3 = Color3.fromRGB(250, 255, 0)
+hfefh57tf_5.Size = UDim2.new(0, 250, 0, 25)
+hfefh57tf_5.Font = Enum.Font.SourceSans
+hfefh57tf_5.Text = scriptname.." V"..Ver
+hfefh57tf_5.TextColor3 = Color3.fromRGB(255, 0, 0)
+hfefh57tf_5.TextSize = 18.000
+
+c6h45esrty_5.Name = "c6h45esrty"
+c6h45esrty_5.Parent = WorldOptions
+c6h45esrty_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+c6h45esrty_5.BackgroundTransparency = 1.000
+c6h45esrty_5.BorderColor3 = Color3.fromRGB(255, 0, 0)
+c6h45esrty_5.Position = UDim2.new(0, 0, 0.0714285746, 0)
+c6h45esrty_5.Size = UDim2.new(0, 250, 0, 25)
+c6h45esrty_5.Font = Enum.Font.SourceSans
+c6h45esrty_5.Text = "World Options"
+c6h45esrty_5.TextColor3 = Color3.fromRGB(255, 0, 0)
+c6h45esrty_5.TextSize = 18.000
+
+button_44.Name = "button"
+button_44.Parent = WorldOptions
+button_44.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_44.BackgroundTransparency = UIT
+button_44.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_44.Position = UDim2.new(0, 15, 0, 60)
+button_44.Size = UDim2.new(0, 220, 0, 30)
+button_44.Font = Enum.Font.SourceSansBold
+button_44.Text = "Loop Reset Pads"
+button_44.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_44.TextSize = 14.000
+button_44.TextWrapped = true
+button_44.MouseButton1Click:connect(function()
+	if lrp == true then
+		lrp = false
+		pss = false
+		button_44.Text = "Loop Reset Pads"
+		button.Text = "Loop Reset Pads"
+		nps()
+	end
+	if lrp == false then
+		lrp = true
+		pss = true
+		button_44.Text = "Un-Loop Reset Pads"
+		button.Text = "Un-Loop Reset Pads"
+	end
+end)
+
+button_45.Name = "button"
+button_45.Parent = WorldOptions
+button_45.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_45.BackgroundTransparency = UIT
+button_45.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_45.Position = UDim2.new(0, 15, 0, 140)
+button_45.Size = UDim2.new(0, 220, 0, 30)
+button_45.Font = Enum.Font.SourceSansBold
+button_45.Text = "Get All Admin Pads"
+button_45.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_45.TextSize = 14.000
+button_45.TextWrapped = true
+button_45.MouseButton1Click:connect(function()
+	gap()
+end)
+
+button_46.Name = "button"
+button_46.Parent = WorldOptions
+button_46.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_46.BackgroundTransparency = UIT
+button_46.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_46.Position = UDim2.new(0, 15, 0, 100)
+button_46.Size = UDim2.new(0, 220, 0, 30)
+button_46.Font = Enum.Font.SourceSansBold
+button_46.Text = "Attempt Game Crash"
+button_46.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_46.TextSize = 14.000
+button_46.TextWrapped = true
+button_46.MouseButton1Click:connect(function()
+	cra()
+end)
+
+button_47.Name = "button"
+button_47.Parent = WorldOptions
+button_47.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_47.BackgroundTransparency = UIT
+button_47.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_47.Position = UDim2.new(0, 15, 0, 180)
+button_47.Size = UDim2.new(0, 220, 0, 30)
+button_47.Font = Enum.Font.SourceSansBold
+button_47.Text = "Move The Baseplate"
+button_47.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_47.TextSize = 14.000
+button_47.TextWrapped = true
+button_47.MouseButton1Click:connect(function()
+	rbase()
+end)
+
+button_48.Name = "button"
+button_48.Parent = WorldOptions
+button_48.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_48.BackgroundTransparency = UIT
+button_48.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_48.Position = UDim2.new(0, 15, 0, 300)
+button_48.Size = UDim2.new(0, 220, 0, 30)
+button_48.Font = Enum.Font.SourceSansBold
+button_48.Text = "Go Back To Main Menu"
+button_48.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_48.TextSize = 14.000
+button_48.TextWrapped = true
+button_48.MouseButton1Click:connect(function()
+	WorldOptions.Visible = false
+	MainMenu.Visible = true
+end)
+--WorldOptions End
+
+--TeleportOptions Start
+TeleportOptions.Name = "TeleportOptions"
+TeleportOptions.Parent = Serenity
+TeleportOptions.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TeleportOptions.BackgroundTransparency = UIT
+TeleportOptions.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TeleportOptions.Position = UDim2.new(0, 5,0.5, -130)
+TeleportOptions.Size = UDim2.new(0, 250, 0, 350)
+TeleportOptions.Visible = false
+TeleportOptions.Draggable = true
+
+hfefh57tf_6.Name = "hfefh57tf"
+hfefh57tf_6.Parent = TeleportOptions
+hfefh57tf_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+hfefh57tf_6.BackgroundTransparency = 1.000
+hfefh57tf_6.BorderColor3 = Color3.fromRGB(250, 255, 0)
+hfefh57tf_6.Size = UDim2.new(0, 250, 0, 25)
+hfefh57tf_6.Font = Enum.Font.SourceSans
+hfefh57tf_6.Text = scriptname.." V"..Ver
+hfefh57tf_6.TextColor3 = Color3.fromRGB(255, 0, 0)
+hfefh57tf_6.TextSize = 18.000
+
+c6h45esrty_6.Name = "c6h45esrty"
+c6h45esrty_6.Parent = TeleportOptions
+c6h45esrty_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+c6h45esrty_6.BackgroundTransparency = 1.000
+c6h45esrty_6.BorderColor3 = Color3.fromRGB(255, 0, 0)
+c6h45esrty_6.Position = UDim2.new(0, 0, 0.0714285746, 0)
+c6h45esrty_6.Size = UDim2.new(0, 250, 0, 25)
+c6h45esrty_6.Font = Enum.Font.SourceSans
+c6h45esrty_6.Text = "Teleport Locations"
+c6h45esrty_6.TextColor3 = Color3.fromRGB(255, 0, 0)
+c6h45esrty_6.TextSize = 18.000
+
+button_49.Name = "button"
+button_49.Parent = TeleportOptions
+button_49.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_49.BackgroundTransparency = UIT
+button_49.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_49.Position = UDim2.new(0, 15, 0, 60)
+button_49.Size = UDim2.new(0, 220, 0, 30)
+button_49.Font = Enum.Font.SourceSansBold
+button_49.Text = "In Admin House"
+button_49.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_49.TextSize = 14.000
+button_49.TextWrapped = true
+button_49.MouseButton1Click:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-28.3604622, 8.22999954, 69.9716721))
+end)
+
+button_50.Name = "button"
+button_50.Parent = TeleportOptions
+button_50.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_50.BackgroundTransparency = UIT
+button_50.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_50.Position = UDim2.new(0, 15, 0, 140)
+button_50.Size = UDim2.new(0, 220, 0, 30)
+button_50.Font = Enum.Font.SourceSansBold
+button_50.Text = "End of Obby"
+button_50.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_50.TextSize = 14.000
+button_50.TextWrapped = true
+button_50.MouseButton1Click:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-41.2672195, 3.68953586, 34.2517052))
+end)
+
+button_51.Name = "button"
+button_51.Parent = TeleportOptions
+button_51.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_51.BackgroundTransparency = UIT
+button_51.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_51.Position = UDim2.new(0, 15, 0, 100)
+button_51.Size = UDim2.new(0, 220, 0, 30)
+button_51.Font = Enum.Font.SourceSansBold
+button_51.Text = "On Top of Admin House"
+button_51.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_51.TextSize = 14.000
+button_51.TextWrapped = true
+button_51.MouseButton1Click:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-30.1182251, 41.8300018, 72.7351761))
+end)
+
+button_52.Name = "button"
+button_52.Parent = TeleportOptions
+button_52.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_52.BackgroundTransparency = UIT
+button_52.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_52.Position = UDim2.new(0, 15, 0, 180)
+button_52.Size = UDim2.new(0, 220, 0, 30)
+button_52.Font = Enum.Font.SourceSansBold
+button_52.Text = "On Admin Pad Reset Button"
+button_52.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_52.TextSize = 14.000
+button_52.TextWrapped = true
+button_52.MouseButton1Click:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-7.00108433, 8.62999344, 94.7342911))
+end)
+
+button_53.Name = "button"
+button_53.Parent = TeleportOptions
+button_53.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_53.BackgroundTransparency = UIT
+button_53.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_53.Position = UDim2.new(0, 15, 0, 300)
+button_53.Size = UDim2.new(0, 220, 0, 30)
+button_53.Font = Enum.Font.SourceSansBold
+button_53.Text = "Go Back To Main Menu"
+button_53.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_53.TextSize = 14.000
+button_53.TextWrapped = true
+button_53.MouseButton1Click:connect(function()
+	TeleportOptions.Visible = false
+	MainMenu.Visible = true
+end)
+
+button_54.Name = "button"
+button_54.Parent = TeleportOptions
+button_54.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_54.BackgroundTransparency = UIT
+button_54.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_54.Position = UDim2.new(0, 15, 0, 220)
+button_54.Size = UDim2.new(0, 220, 0, 30)
+button_54.Font = Enum.Font.SourceSansBold
+button_54.Text = "Back to Spawn"
+button_54.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_54.TextSize = 14.000
+button_54.TextWrapped = true
+button_54.MouseButton1Click:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-41.7809067, 3.69189405, -23.419302))
+end)
+--TeleportOptions End
+
+--GearMenu Start
+GearMenu.Name = "GearMenu"
+GearMenu.Parent = Serenity
+GearMenu.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+GearMenu.BackgroundTransparency = UIT
+GearMenu.BorderColor3 = Color3.fromRGB(255, 0, 0)
+GearMenu.Position = UDim2.new(0, 5,0.5, -130)
+GearMenu.Size = UDim2.new(0, 250, 0, 350)
+GearMenu.Visible = false
+GearMenu.Draggable = true
+
+hfefh57tf_7.Name = "hfefh57tf"
+hfefh57tf_7.Parent = GearMenu
+hfefh57tf_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+hfefh57tf_7.BackgroundTransparency = 1.000
+hfefh57tf_7.BorderColor3 = Color3.fromRGB(250, 255, 0)
+hfefh57tf_7.Size = UDim2.new(0, 250, 0, 25)
+hfefh57tf_7.Font = Enum.Font.SourceSans
+hfefh57tf_7.Text = scriptname.." V"..Ver
+hfefh57tf_7.TextColor3 = Color3.fromRGB(255, 0, 0)
+hfefh57tf_7.TextSize = 18.000
+
+c6h45esrty_7.Name = "c6h45esrty"
+c6h45esrty_7.Parent = GearMenu
+c6h45esrty_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+c6h45esrty_7.BackgroundTransparency = 1.000
+c6h45esrty_7.BorderColor3 = Color3.fromRGB(255, 0, 0)
+c6h45esrty_7.Position = UDim2.new(0, 0, 0.0714285746, 0)
+c6h45esrty_7.Size = UDim2.new(0, 250, 0, 25)
+c6h45esrty_7.Font = Enum.Font.SourceSans
+c6h45esrty_7.Text = "Gear Menu"
+c6h45esrty_7.TextColor3 = Color3.fromRGB(255, 0, 0)
+c6h45esrty_7.TextSize = 18.000
+
+button_55.Name = "button"
+button_55.Parent = GearMenu
+button_55.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_55.BackgroundTransparency = UIT
+button_55.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_55.Position = UDim2.new(0, 15, 0, 300)
+button_55.Size = UDim2.new(0, 220, 0, 30)
+button_55.Font = Enum.Font.SourceSansBold
+button_55.Text = "Go Back To Main Menu"
+button_55.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_55.TextSize = 14.000
+button_55.TextWrapped = true
+button_55.MouseButton1Click:connect(function()
+	GearMenu.Visible = false
+	MainMenu.Visible = true
+end)
+
+button_56.Name = "button"
+button_56.Parent = GearMenu
+button_56.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_56.BackgroundTransparency = UIT
+button_56.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_56.Position = UDim2.new(0, 15, 0, 60)
+button_56.Size = UDim2.new(0, 100, 0, 30)
+button_56.Font = Enum.Font.SourceSansBold
+button_56.Text = "Taco"
+button_56.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_56.TextSize = 14.000
+button_56.TextWrapped = true
+button_56.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("gear me 15177716"))
+	game:GetService'Players':Chat(("music 185529776"))
+end)
+
+button_57.Name = "button"
+button_57.Parent = GearMenu
+button_57.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_57.BackgroundTransparency = UIT
+button_57.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_57.Position = UDim2.new(0, 135, 0, 60)
+button_57.Size = UDim2.new(0, 100, 0, 30)
+button_57.Font = Enum.Font.SourceSansBold
+button_57.Text = "Inferno Sword"
+button_57.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_57.TextSize = 14.000
+button_57.TextWrapped = true
+button_57.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("gear me 83704169"))
+end)
+
+button_58.Name = "button"
+button_58.Parent = GearMenu
+button_58.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_58.BackgroundTransparency = UIT
+button_58.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_58.Position = UDim2.new(0, 135, 0, 105)
+button_58.Size = UDim2.new(0, 100, 0, 30)
+button_58.Font = Enum.Font.SourceSansBold
+button_58.Text = "Water Crossbow - (Good for Greifing)"
+button_58.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_58.TextSize = 14.000
+button_58.TextWrapped = true
+button_58.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("gear me 236438668"))
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+	Title = "Tip";
+	Text = "If you do 'reset me' after shooting water it will stay!";
+	})
+end)
+
+button_59.Name = "button"
+button_59.Parent = GearMenu
+button_59.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_59.BackgroundTransparency = UIT
+button_59.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_59.Position = UDim2.new(0, 135, 0, 150)
+button_59.Size = UDim2.new(0, 100, 0, 30)
+button_59.Font = Enum.Font.SourceSansBold
+button_59.Text = "Paint Tool"
+button_59.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_59.TextSize = 14.000
+button_59.TextWrapped = true
+button_59.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("gear me 18474459"))
+end)
+
+button_60.Name = "button"
+button_60.Parent = GearMenu
+button_60.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_60.BackgroundTransparency = UIT
+button_60.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_60.Position = UDim2.new(0, 135, 0, 195)
+button_60.Size = UDim2.new(0, 100, 0, 30)
+button_60.Font = Enum.Font.SourceSansBold
+button_60.Text = "Car"
+button_60.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_60.TextSize = 14.000
+button_60.TextWrapped = true
+button_60.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("gear me 164207580"))
+end)
+
+button_61.Name = "button"
+button_61.Parent = GearMenu
+button_61.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_61.BackgroundTransparency = UIT
+button_61.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_61.Position = UDim2.new(0, 135, 0, 240)
+button_61.Size = UDim2.new(0, 100, 0, 30)
+button_61.Font = Enum.Font.SourceSansBold
+button_61.Text = "Railgun"
+button_61.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_61.TextSize = 14.000
+button_61.TextWrapped = true
+button_61.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("gear me 79446473"))
+end)
+
+button_62.Name = "button"
+button_62.Parent = GearMenu
+button_62.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_62.BackgroundTransparency = UIT
+button_62.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_62.Position = UDim2.new(0, 15, 0, 240)
+button_62.Size = UDim2.new(0, 100, 0, 30)
+button_62.Font = Enum.Font.SourceSansBold
+button_62.Text = "Time Sword"
+button_62.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_62.TextSize = 14.000
+button_62.TextWrapped = true
+button_62.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("gear me 71037101"))
+end)
+
+button_63.Name = "button"
+button_63.Parent = GearMenu
+button_63.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_63.BackgroundTransparency = UIT
+button_63.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_63.Position = UDim2.new(0, 15, 0, 195)
+button_63.Size = UDim2.new(0, 100, 0, 30)
+button_63.Font = Enum.Font.SourceSansBold
+button_63.Text = "Lazer"
+button_63.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_63.TextSize = 14.000
+button_63.TextWrapped = true
+button_63.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("gear me 130113146"))
+end)
+
+button_64.Name = "button"
+button_64.Parent = GearMenu
+button_64.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_64.BackgroundTransparency = UIT
+button_64.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_64.Position = UDim2.new(0, 15, 0, 150)
+button_64.Size = UDim2.new(0, 100, 0, 30)
+button_64.Font = Enum.Font.SourceSansBold
+button_64.Text = "Revolver"
+button_64.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_64.TextSize = 14.000
+button_64.TextWrapped = true
+button_64.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("gear me 97885508"))
+end)
+
+button_65.Name = "button"
+button_65.Parent = GearMenu
+button_65.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button_65.BackgroundTransparency = UIT
+button_65.BorderColor3 = Color3.fromRGB(255, 0, 0)
+button_65.Position = UDim2.new(0, 15, 0, 105)
+button_65.Size = UDim2.new(0, 100, 0, 30)
+button_65.Font = Enum.Font.SourceSansBold
+button_65.Text = "Bomb"
+button_65.TextColor3 = Color3.fromRGB(255, 0, 0)
+button_65.TextSize = 14.000
+button_65.TextWrapped = true
+button_65.MouseButton1Click:connect(function()
+	game:GetService'Players':Chat(("gear me 11563251"))
+end)
+--GearMenu End
+
+--Start Toggle Menu
+Mouse.KeyDown:connect(function(key)
+	key = key:upper()
+	if key == "F" then
+		if op1 == false then 
+			MainMenu.Visible = true
+			MainMenu.Active = true
+			MainMenu.Draggable = true
+			op1 = true
+			game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "Serenity GUI";
+			Text = "OPENED!\nPress 'F' to close.";
+			})
+		else
+			game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "Serenity GUI";
+			Text = "CLOSED!\nPress 'F' to reopen.";
+			})
+			MainMenu.Visible = false
+			MusicMenu.Visible = false
+			OwnerOnly.Visible = false
+			PlayerOptions.Visible = false
+			TeleportOptions.Visible = false
+			WorldOptions.Visible = false
+			GearMenu.Visible = false
+			op1 = false
+		end
+	end
+end)
+--End Toggle Menu
+
+--Command Client Start
+Action = game.Players:GetPlayers()
+for i = 1,#Action do
+	Action[i].Chatted:connect(function(Message)
+		pre = string.sub(Message, 1, 1)
+		if pre ~= ";" then end
+	    if Action[i].Name == game.Players.LocalPlayer.Name then
+			if string.sub(Message, 1, 5) == ";step" then
+				sss = string.sub(Message, 7)
+				game:GetService("StarterGui"):SetCore("SendNotification", {
+				Title = "Spam Tool";
+				Text = "Delay set to:\n"..sss;
+				})
+			end
+			if string.sub(Message, 1) == ";rbase" then
+				rbase()
+			end
+			if string.sub(Message, 1) == ";getadmin" then
+				gat()
+			end
+			if string.sub(Message, 1) == ";rejoin" then
+				game:GetService("TeleportService"):Teleport(game.PlaceId, playur)
+			end
+			if string.sub(Message, 1) == ";getadmin" then
+				gap()
+			end
+			if string.sub(Message, 1) == ";crash" then
+				cra()
+			end
+			if string.sub(Message, 1) == ";yespads" then
+				pss = false
+			end
+			if string.sub(Message, 1) == ";nopads" then
+				pss = true
+				game:GetService'Players':Chat(("music 1064109642"))
+				nps()
+			end
+	        if string.sub(Message, 1, 3) == ";wl" then
+	            wlplayer = string.sub(Message, 5)
+	            game:GetService'Players':Chat(("h Whitelisted "..wlplayer))
+	        end
+	        if string.sub(Message, 1) == ";uwl" then
+	            wlplayer = string.sub(Message, 5)
+	            wlplayer = nil
+	        end
+	        if string.sub(Message, 1) == ";regen" then
+                fireclickdetector(game:GetService("Workspace").Terrain["_Game"].Admin.Regen.ClickDetector, 0)
+	        end
+	        if string.sub(Message, 1, 5) == ";spam" then
+	            text = string.sub(Message, 7)
+	            game:GetService'Players':Chat(("h Spamming "..text))
+	            stop()
+	            spam(text)
+	        end
+	        if string.sub(Message, 1) == ";stop" then
+	            game:GetService'Players':Chat(("h Stopped spam"))
+	            stop()
+	        end
+			if string.sub(Message, 1, 2) == ";m" then
+				local musictxt = string.sub(Message, 4)
+				mcmd={}
+				for mword in string.gmatch(musictxt, "%S+") do
+					table.insert(mcmd, 1, mword)
+				end
+				--[[
+				Controlf music
+
+				if mcmd[1] == "china" then
+					game:GetService'Players':Chat(("music 775998997"))
+				end
+				
+				--]]
+				if mcmd[1] == "thunder" then
+					game:GetService'Players':Chat(("music 2653366831"))
+				end
+				if mcmd[1] == "spotlight" then
+					game:GetService'Players':Chat(("music 1416455255"))
+				end
+				if mcmd[1] == "carryon" then
+					game:GetService'Players':Chat(("music 1003325030"))
+				end
+				if mcmd[1] == "rip" then
+					game:GetService'Players':Chat(("music 4773093598"))
+				end
+				if mcmd[1] == "on" then
+					game:GetService'Players':Chat(("music 603146550"))
+				end
+				if mcmd[1] == "panini" then
+					game:GetService'Players':Chat(("music 3340674075"))
+				end
+				if mcmd[1] == "bacon" then
+					game:GetService'Players':Chat(("music 4880331244"))
+				end
+				if mcmd[1] == "heaven" then
+					game:GetService'Players':Chat(("music 709323742"))
+				end
+				if mcmd[1] == "dre" then
+					game:GetService'Players':Chat(("music 908353739"))
+				end
+				if mcmd[1] == "trains" then
+					game:GetService'Players':Chat(("music 131072261"))
+				end
+				if mcmd[1] == "louis" then
+					game:GetService'Players':Chat(("music 4741387540"))
+				end
+				if mcmd[1] == "spectre" then
+					game:GetService'Players':Chat(("music 1088486530"))
+				end
+				if mcmd[1] == "force" then
+					game:GetService'Players':Chat(("music 644914256"))
+				end
+				if mcmd[1] == "hello" then
+					game:GetService'Players':Chat(("music 214902446"))
+				end
+				if mcmd[1] == "ily" then
+					game:GetService'Players':Chat(("music 225000651"))
+				end
+				if mcmd[1] == "creeper" then
+					game:GetService'Players':Chat(("music 3807239428"))
+					wait(3.65)
+					game:GetService'Players':Chat(("m Creeper, Aww Man!!"))
+					game:GetService'Players':Chat(("creeper all"))
+				end
+				if mcmd[1] == "kfc" then 
+					game:GetService'Players':Chat(("music 205254380"))
+				end
+				if mcmd[1] == "titanium" then 
+					game:GetService'Players':Chat(("music 398159550"))
+				end
+				if mcmd[1] == "rick" then 
+					game:GetService'Players':Chat(("music 4662452515"))
+				end
+				if mcmd[1] == "mcu" then 
+					game:GetService'Players':Chat(("music 4567090901"))
+				end
+				if mcmd[1] == "moonlight" then 
+					game:GetService'Players':Chat(("music 1678047143"))
+				end
+				if mcmd[1] == "dancemonkey" then 
+					game:GetService'Players':Chat(("music 4532362987"))
+				end
+				if mcmd[1] == "mc" then 
+					game:GetService'Players':Chat(("music 2996452105"))
+				end
+				if mcmd[1] == "china" then
+					game:GetService'Players':Chat(("music 775998997"))
+				end
+				if mcmd[1] == "mine" then
+					game:GetService'Players':Chat(("music 2996452105"))
+				end
+				if mcmd[1] == "deep" then
+					game:GetService'Players':Chat(("music 48059502"))
+				end
+				if mcmd[1] == "tids" then
+					game:GetService'Players':Chat(("music 4828997951"))
+				end
+				if mcmd[1] == "arab" then
+					game:GetService'Players':Chat(("music 439241768"))
+				end
+				if mcmd[1] == "uwu" then
+					game:GetService'Players':Chat(("music 4705912095"))
+				end 
+				if mcmd[1] == "alarm" then
+					game:GetService'Players':Chat(("music 429406046"))
+				end
+				if mcmd[1] == "undo" then
+					game:GetService'Players':Chat(("music 1510861140"))
+				end
+				if mcmd[1] == "krabs" then
+					game:GetService'Players':Chat(("music 142681298"))
+				end
+				if mcmd[1] == "kazoo" then
+					game:GetService'Players':Chat(("music 2430580736"))
+				end
+				if mcmd[1] == "uhoh" then
+					game:GetService'Players':Chat(("music 3907864084"))
+				end
+				if mcmd[1] == "mii" then
+					game:GetService'Players':Chat(("music 3155039059"))
+				end
+				if mcmd[1] == "wii" then
+					game:GetService'Players':Chat(("music 1305251774"))
+				end
+				if mcmd[1] == "ussr" then
+					game:GetService'Players':Chat(("music 1064109642"))
+				end
+				if mcmd[1] == "fbi" then
+					game:GetService'Players':Chat(("music 2507128460"))
+				end
+				if mcmd[1] == "gay" then
+					game:GetService'Players':Chat(("music 4528940104"))
+				end
+				if mcmd[1] == "remix" then
+					game:GetService'Players':Chat(("music 4641743071"))
+				end
+				if mcmd[1] == "copycat" then
+					game:GetService'Players':Chat(("music 1173506587"))
+				end
+				if mcmd[1] == "mimi" then
+					game:GetService'Players':Chat(("music 1083357814"))
+				end
+				if mcmd[1] == "imgay" then
+					game:GetService'Players':Chat(("music 1735284953"))
+				end
+				if mcmd[1] == "remix" then
+					game:GetService'Players':Chat(("music 4641743071"))
+				end
+				if mcmd[1] == "static" then
+					game:GetService'Players':Chat(("music 4168941803"))
+				end
+				if mcmd[1] == "ph" then
+					game:GetService'Players':Chat(("music 1930619595"))
+				end
+				if mcmd[1] == "gun" then
+					game:GetService'Players':Chat(("music 2838571776"))
+				end
+				if mcmd[1] == "deathbed" then
+					game:GetService'Players':Chat(("music 3852221223"))
+				end
+				if mcmd[1] == "ear" then
+					game:GetService'Players':Chat(("music 4729946291"))
+				end
+			end
+			if string.sub(Message, 1, 2) == ";g" then
+				local isCmd = true
+				local geartxt = string.sub(Message, 4)
+				gcmd={}
+				for gword in string.gmatch(geartxt, "%S+") do
+					table.insert(gcmd, 1, gword)
+				end
+				--[[
+				Controlf gear
+				
+				if gcmd[1] == "taco" then
+					game:GetService'Players':Chat(("gear "..gcmd[2].." 15177716"))
+				end
+				
+				--]]
+				if gcmd[1] == "taco" then
+					game:GetService'Players':Chat(("gear "..gcmd[2].." 15177716"))
+					game:GetService'Players':Chat(("music 185529776"))
+				end
+				if gcmd[1] == "inferno" then
+					game:GetService'Players':Chat(("gear "..gcmd[2].." 83704169"))
+				end
+				if gcmd[1] == "guitar" then
+					game:GetService'Players':Chat(("gear "..gcmd[2].." 99119198"))
+				end
+				if gcmd[1] == "bluster" then
+					game:GetService'Players':Chat(("gear "..gcmd[2].." 83704190"))
+				end
+				if gcmd[1] == "water" then
+					game:GetService'Players':Chat(("gear "..gcmd[2].." 236438668"))
+					game:GetService("StarterGui"):SetCore("SendNotification", {
+					Title = "Tip";
+					Text = "If you do, reset me after shooting water, it will stay!";
+					})
+				end
+				if gcmd[1] == "paint" then
+					game:GetService'Players':Chat(("gear "..gcmd[2].." 18474459"))
+				end
+				if gcmd[1] == "car" then
+					game:GetService'Players':Chat(("gear "..gcmd[2].." 164207580"))
+				end
+				if gcmd[1] == "scre" then
+					game:GetService'Players':Chat(("gear "..gcmd[2].." 93136674"))
+				end
+				if gcmd[1] == "princess" then
+					game:GetService'Players':Chat(("gear "..gcmd[2].." 114020480"))
+				end
+				if gcmd[1] == "bomb" then
+					game:GetService'Players':Chat(("gear "..gcmd[2].." 11563251"))
+				end
+				if gcmd[1] == "jail" then
+					game:GetService'Players':Chat(("gear "..gcmd[2].." 82357101"))
+				end
+				if gcmd[1] == "railgun" then
+					game:GetService'Players':Chat(("gear "..gcmd[2].." 79446473"))
+				end
+				if gcmd[1] == "timesword" then
+					game:GetService'Players':Chat(("gear "..gcmd[2].." 71037101"))
+				end
+				if gcmd[1] == "laser" then
+					game:GetService'Players':Chat(("gear "..gcmd[2].." 130113146"))
+				end
+				if gcmd[1] == "revolver" then
+					game:GetService'Players':Chat(("gear "..gcmd[2].." 97885508"))
+				end
+			end
+			if string.sub(Message, 1) == ";house" then
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-28.3604622, 8.22999954, 69.9716721))
+			end
+			if string.sub(Message, 1) == ";ohouse" then
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-30.1182251, 41.8300018, 72.7351761))
+			end
+			if string.sub(Message, 1) == ";spawn" then
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-41.7809067, 3.69189405, -23.419302))
+			end
+			if string.sub(Message, 1) == ";reset" then
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-7.00108433, 8.62999344, 94.7342911))
+			end
+			if string.sub(Message, 1) == ";obby" then
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-41.2672195, 3.68953586, 34.2517052))
+			end
+			if string.sub(Message, 1, 2) == ";e" then
+				local etxt = string.sub(Message, 4)
+				ecmd={}
+				for eword in string.gmatch(etxt, "%S+") do
+					table.insert(ecmd, 1, eword)
+				end
+				if ecmd[1] == "hmm" then
+						hmm()
+				end
+				if ecmd[1] == "headtoss" then
+						headthrow()
+				end
+				if ecmd[1] == "armspin" then
+						armturbine()
+				end
+				if ecmd[1] == "loophead" then
+						loophead()
+				end
+				if ecmd[1] == "scream" then
+						scream()
+				end
+				if ecmd[1] == "raisehead" then
+						raisehead()
+				end
+				if ecmd[1] == "dab" then
+						dab()
+				end
+				if ecmd[1] == "lay" then
+						laydown()
+				end
+				if ecmd[1] == "crouch" then
+						crouch()
+				end
+			end
+			if string.sub(Message, 1) == ";unblindable" then
+					unblindable()
+			end
+			if string.sub(Message, 1, 4) == ";lag" then
+				plrr = string.sub(Message, 6)
+				nuke(plrr)
+			end
+			if string.sub(Message, 1) == ";btools" then
+					btools()
+			end
+		end
+	    if Action[i].Name == wlplayer then
+			if string.sub(Message, 1) == ";yespads" then
+				pss = false
+			end
+			if string.sub(Message, 1) == ";nopads" then
+				pss = true
+				nps()
+			end
+			if string.sub(Message, 1, 5) == ";spam" then
+	            text = string.sub(Message, 7)
+	            game:GetService'Players':Chat(("h Spamming "..text))
+	            stop()
+	            spam(text)
+	        end
+	        if string.sub(Message, 1) == ";stop" then
+	            game:GetService'Players':Chat(("h Stopped spam"))
+	            stop()
+	        end
+	        if string.sub(Message, 1) == ";regen" then
+                fireclickdetector(game:GetService("Workspace").Terrain["_Game"].Admin.Regen.ClickDetector, 0)
+	        end
+			if string.sub(Message, 1, 2) == ";m" then
+				local musictxt = string.sub(Message, 4)
+				mcmd={}
+				for mword in string.gmatch(musictxt, "%S+") do
+					table.insert(mcmd, 1, mword)
+				end
+				if mcmd[1] == "thunder" then
+					game:GetService'Players':Chat(("music 2653366831"))
+				end
+				if mcmd[1] == "spotlight" then
+					game:GetService'Players':Chat(("music 1416455255"))
+				end
+				if mcmd[1] == "carryon" then
+					game:GetService'Players':Chat(("music 1003325030"))
+				end
+				if mcmd[1] == "rip" then
+					game:GetService'Players':Chat(("music 4773093598"))
+				end
+				if mcmd[1] == "on" then
+					game:GetService'Players':Chat(("music 603146550"))
+				end
+				if mcmd[1] == "panini" then
+					game:GetService'Players':Chat(("music 3340674075"))
+				end
+				if mcmd[1] == "bacon" then
+					game:GetService'Players':Chat(("music 4880331244"))
+				end
+				if mcmd[1] == "heaven" then
+					game:GetService'Players':Chat(("music 709323742"))
+				end
+				if mcmd[1] == "dre" then
+					game:GetService'Players':Chat(("music 908353739"))
+				end
+				if mcmd[1] == "trains" then
+					game:GetService'Players':Chat(("music 131072261"))
+				end
+				if mcmd[1] == "louis" then
+					game:GetService'Players':Chat(("music 4741387540"))
+				end
+				if mcmd[1] == "spectre" then
+					game:GetService'Players':Chat(("music 1088486530"))
+				end
+				if mcmd[1] == "force" then
+					game:GetService'Players':Chat(("music 644914256"))
+				end
+				if mcmd[1] == "hello" then
+					game:GetService'Players':Chat(("music 214902446"))
+				end
+				if mcmd[1] == "ily" then
+					game:GetService'Players':Chat(("music 225000651"))
+				end
+				if mcmd[1] == "creeper" then
+					game:GetService'Players':Chat(("music 3807239428"))
+					wait(3.65)
+					game:GetService'Players':Chat(("m Creeper, Aww Man!!"))
+					game:GetService'Players':Chat(("creeper all"))
+				end
+				if mcmd[1] == "kfc" then 
+					game:GetService'Players':Chat(("music 205254380"))
+				end
+				if mcmd[1] == "titanium" then 
+					game:GetService'Players':Chat(("music 398159550"))
+				end
+				if mcmd[1] == "rick" then 
+					game:GetService'Players':Chat(("music 4662452515"))
+				end
+				if mcmd[1] == "mcu" then 
+					game:GetService'Players':Chat(("music 4567090901"))
+				end
+				if mcmd[1] == "moonlight" then 
+					game:GetService'Players':Chat(("music 1678047143"))
+				end
+				if mcmd[1] == "dancemonkey" then 
+					game:GetService'Players':Chat(("music 4532362987"))
+				end
+				if mcmd[1] == "mc" then 
+					game:GetService'Players':Chat(("music 2996452105"))
+				end
+				if mcmd[1] == "china" then 
+					game:GetService'Players':Chat(("music 775998997"))
+				end
+				if mcmd[1] == "mine" then
+					game:GetService'Players':Chat(("music 2996452105"))
+				end
+				if mcmd[1] == "deep" then
+					game:GetService'Players':Chat(("music 48059502"))
+				end
+				if mcmd[1] == "tids" then
+					game:GetService'Players':Chat(("music 4828997951"))
+				end
+				if mcmd[1] == "arab" then
+					game:GetService'Players':Chat(("music 439241768"))
+				end
+				if mcmd[1] == "uwu" then
+					game:GetService'Players':Chat(("music 4705912095"))
+				end 
+				if mcmd[1] == "alarm" then
+					game:GetService'Players':Chat(("music 429406046"))
+				end
+				if mcmd[1] == "undo" then
+					game:GetService'Players':Chat(("music 1510861140"))
+				end
+				if mcmd[1] == "krabs" then
+					game:GetService'Players':Chat(("music 142681298"))
+				end
+				if mcmd[1] == "kazoo" then
+					game:GetService'Players':Chat(("music 2430580736"))
+				end
+				if mcmd[1] == "uhoh" then
+					game:GetService'Players':Chat(("music 3907864084"))
+				end
+				if mcmd[1] == "mii" then
+					game:GetService'Players':Chat(("music 3155039059"))
+				end
+				if mcmd[1] == "wii" then
+					game:GetService'Players':Chat(("music 1305251774"))
+				end
+				if mcmd[1] == "ussr" then
+					game:GetService'Players':Chat(("music 1064109642"))
+				end
+				if mcmd[1] == "fbi" then
+					game:GetService'Players':Chat(("music 2507128460"))
+				end
+				if mcmd[1] == "gay" then
+					game:GetService'Players':Chat(("music 4528940104"))
+				end
+				if mcmd[1] == "remix" then
+					game:GetService'Players':Chat(("music 4641743071"))
+				end
+				if mcmd[1] == "copycat" then
+					game:GetService'Players':Chat(("music 1173506587"))
+				end
+				if mcmd[1] == "mimi" then
+					game:GetService'Players':Chat(("music 1083357814"))
+				end
+				if mcmd[1] == "imgay" then
+					game:GetService'Players':Chat(("music 1735284953"))
+				end
+				if mcmd[1] == "remix" then
+					game:GetService'Players':Chat(("music 4641743071"))
+				end
+				if mcmd[1] == "static" then
+					game:GetService'Players':Chat(("music 4168941803"))
+				end
+				if mcmd[1] == "ph" then
+					game:GetService'Players':Chat(("music 1930619595"))
+				end
+				if mcmd[1] == "gun" then
+					game:GetService'Players':Chat(("music 2838571776"))
+				end
+				if mcmd[1] == "deathbed" then
+					game:GetService'Players':Chat(("music 3852221223"))
+				end
+				if mcmd[1] == "ear" then
+					game:GetService'Players':Chat(("music 4729946291"))
+				end
+			end
+			if string.sub(Message, 1, 2) == ";g" then
+				local geartxt = string.sub(Message, 4)
+				gcmd={}
+				for gword in string.gmatch(geartxt, "%S+") do
+					table.insert(gcmd, 1, gword)
+				end
+				if gcmd[1] == "taco" then
+					game:GetService'Players':Chat(("gear "..gcmd[2].." 15177716"))
+					game:GetService'Players':Chat(("music 185529776"))
+				end
+				if gcmd[1] == "inferno" then
+					game:GetService'Players':Chat(("gear "..gcmd[2].." 83704169"))
+				end
+				if gcmd[1] == "guitar" then
+					game:GetService'Players':Chat(("gear "..gcmd[2].." 99119198"))
+				end
+				if gcmd[1] == "bluster" then
+					game:GetService'Players':Chat(("gear "..gcmd[2].." 83704190"))
+				end
+				if gcmd[1] == "water" then
+					game:GetService'Players':Chat(("gear "..gcmd[2].." 236438668"))
+				end
+				if gcmd[1] == "paint" then
+					game:GetService'Players':Chat(("gear "..gcmd[2].." 18474459"))
+				end
+				if gcmd[1] == "car" then
+					game:GetService'Players':Chat(("gear "..gcmd[2].." 164207580"))
+				end
+				if gcmd[1] == "scre" then
+					game:GetService'Players':Chat(("gear "..gcmd[2].." 93136674"))
+				end
+				if gcmd[1] == "princess" then
+					game:GetService'Players':Chat(("gear "..gcmd[2].." 114020480"))
+				end
+				if gcmd[1] == "bomb" then
+					game:GetService'Players':Chat(("gear "..gcmd[2].." 11563251"))
+				end
+				if gcmd[1] == "jail" then
+					game:GetService'Players':Chat(("gear "..gcmd[2].." 82357101"))
+				end
+				if gcmd[1] == "railgun" then
+					game:GetService'Players':Chat(("gear "..gcmd[2].." 79446473"))
+				end
+				if gcmd[1] == "timesword" then
+					game:GetService'Players':Chat(("gear "..gcmd[2].." 71037101"))
+				end
+				if gcmd[1] == "laser" then
+					game:GetService'Players':Chat(("gear "..gcmd[2].." 130113146"))
+				end
+				if gcmd[1] == "revolver" then
+					game:GetService'Players':Chat(("gear "..gcmd[2].." 97885508"))
+				end
+			end
+		end
+	end)
+end
+--Command Client End
+
+--Show Load Done
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = scriptname.." V"..Ver;
+Text = "Successfully loaded!\nPress 'F' to toggle GUI!";
+})
+wait()
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "Credits:";
+Text = "Shade4Real#8929\nVoltix#2172";
+})
+--End of Show Load Done
+
+--Function List Start
+function btools ()
+	local delete = Instance.new("HopperBin")
+	delete.BinType = "Hammer"
+	delete.Parent = game.Players.LocalPlayer.Backpack
+	local copy = Instance.new("HopperBin")
+	copy.BinType = "Clone"
+	copy.Parent = game.Players.LocalPlayer.Backpack
+	local drag = Instance.new("HopperBin")
+	drag.BinType = "GameTool"
+	drag.Parent = game.Players.LocalPlayer.Backpack
+end
+function unblindable ()
+while true do wait()
+game.Players.LocalPlayer.PlayerGui:WaitForChild("EFFECTGUIBLIND")
+game.Players.LocalPlayer.PlayerGui.EFFECTGUIBLIND:Destroy()
+end
+end
+function spam (text)
+    active = true
+    stri=tostring(text)
+    cmd={}
+    for word in string.gmatch(stri, '([^:]+)') do
+        table.insert(cmd, 1, word)
+    end
+    while active == true do wait(sss)
+        for i,v in ipairs(cmd) do wait()
+           game:GetService'Players':Chat((v))
+        end
+    end
+end
+function nuke (plrr)
+	active = true
+			game:GetService'Players':Chat(("respawn "..plrr))
+			game:GetService'Players':Chat(("ff "..plrr))
+			game:GetService'Players':Chat(("freeze "..plrr))
+			game:GetService'Players':Chat(("jail "..plrr))
+		for i=1,30000 do
+			game:GetService'Players':Chat(("explode "..plrr))
+		end
+end
+function armturbine ()
+for i,v in pairs(game.Players:GetPlayers()) do
+AnimationId = "259438880"
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(100)
+end
+end
+function loophead ()
+    for i,v in pairs(game.Players:GetPlayers()) do
+AnimationId = "35154961"
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+while wait(0.00703125) do
+k:Play()
+k:AdjustSpeed(640)
+end
+end
+end
+function laydown ()
+for i,v in pairs(game.Players:GetPlayers()) do
+AnimationId = "282574440"
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+end
+end
+function dab ()
+for i,v in pairs(game.Players:GetPlayers()) do
+AnimationId = "248263260"
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+end
+end
+function hmm ()
+for i,v in pairs(game.Players:GetPlayers()) do
+AnimationId = "148840371"
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+end
+end
+function scream ()
+for i,v in pairs(game.Players:GetPlayers()) do
+AnimationId = "180611870"
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+end
+end
+function headthrow ()
+for i,v in pairs(game.Players:GetPlayers()) do
+AnimationId = "35154961"
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+end
+end
+function raisehead ()
+for i,v in pairs(game.Players:GetPlayers()) do
+AnimationId = "121572214"
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+end
+end
+function crouch ()
+for i,v in pairs(game.Players:GetPlayers()) do
+AnimationId = "182724289"
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+end
+end
+function stop ()
+active = false
+end
+
+function nps ()
+	while pss == true do
+		fireclickdetector(game:GetService("Workspace").Terrain["_Game"].Admin.Regen.ClickDetector, 0)
+		wait(0.003)
+		fireclickdetector(game:GetService("Workspace").Terrain["_Game"].Admin.Regen.ClickDetector, 0)
+	end
+end
+
+function rjn ()
+	local place = game:GetService("TeleportService")
+	local playur = game:GetService("Players").LocalPlayer
+	place:Teleport(game.PlaceId, playur)	
+end
+
+function gap ()
+	fireclickdetector(game:GetService("Workspace").Terrain["_Game"].Admin.Regen.ClickDetector, 0)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-12.7096605, 8.62999916, 94.2826157, -0.999921501, -2.98075449e-08, 0.0125419069, -2.97182066e-08, 1, 7.3093811e-09, -0.0125419069, 6.93608504e-09, -0.999921501))
+	wait(0.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-16.6578312, 8.61442566, 94.2862549, -0.999505401, -7.70825679e-08, -0.0314528234, -7.69930182e-08, 1, -4.05809031e-09, 0.0314528234, -1.63443437e-09, -0.999505401))
+	wait(0.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-20.8331089, 8.62395477, 94.432251, -0.999682963, 1.03628132e-07, -0.0251875259, 1.03774184e-07, 1, -4.49199167e-09, 0.0251875259, -7.10438242e-09, -0.999682963))
+	wait(0.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-24.615078, 8.59564972, 94.0418854, -0.999683201, -9.74110534e-08, -0.0251754392, -9.73986332e-08, 1, -1.71898662e-09, 0.0251754392, 7.33612837e-10, -0.999683201))
+	wait(0.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-28.629425, 8.59974003, 94.0210342, -1.00000083, -9.73989458e-08, -2.68230215e-05, -9.73986332e-08, 1, -1.71898662e-09, 2.68230215e-05, -1.71638137e-09, -1.00000083))
+	wait(0.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-32.6574135, 8.62841797, 94.1386795, -0.999821842, -9.74138672e-08, -0.0188864321, -9.73987326e-08, 1, -1.7189723e-09, 0.0188864321, 1.2085212e-10, -0.999821842))
+	wait(0.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-36.8136482, 8.62999916, 94.2091827, -0.999287307, -1.9776738e-09, -0.0377426855, -2.0270885e-09, 1, 1.27097477e-09, 0.0377426855, 1.34657674e-09, -0.999287307))
+	wait(0.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-40.8000412, 8.62869072, 94.0551605, -0.999682367, -1.9944324e-09, -0.0251874477, -2.02708894e-09, 1, 1.27097477e-09, 0.0251874477, 1.32162881e-09, -0.999682367))
+	wait(0.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-44.4930801, 8.62999916, 94.3159561, -0.99982059, -2.00267958e-09, -0.0189193524, -2.02708894e-09, 1, 1.27097477e-09, 0.0189193524, 1.30909839e-09, -0.99982059))
+end
+
+function cra ()
+	warn('Attempting Server Shutdown!')
+	warn('Made by Voltix#2172')
+	local LP = game:GetService('Players').LocalPlayer
+	if workspace:FindFirstChild(LP.Name) == nil then LP.CharacterAdded:Wait() end
+	local Char = workspace[LP.Name]
+	local Hat = Char['Humanoid']:GetAccessories()[1]
+	local Handle = Hat['Handle']
+	local Tool = Instance.new("Tool",LP.Backpack)
+	Tool.Grip = Tool.Grip * CFrame.new(0,-100,0)
+	Tool.Parent = Char
+	Handle.Parent = Tool
+	game:GetService('RunService').Stepped:Connect(function()
+		for _,Part in next, Char:GetChildren() do
+			if Part:IsA('BasePart') then
+			Part.CanCollide = false
+			end
+		end
+	end)
+		local HPart; if Char:FindFirstChild('Right Arm') then
+		HPart = 'Right Arm'
+	else
+		HPart = 'RightHand'
+	end
+	for _ = 1,60000 do
+		local Grip = Char[HPart].RightGrip:Clone()
+		Grip.Parent = Char.Humanoid['Status']
+	end
+	wait(1)
+	local CPart = Instance.new('Part',workspace)
+	CPart.CanCollide = false
+	CPart.Transparency = 1 CPart.Anchored = true
+	CPart.CFrame = Char['Head'].CFrame
+	workspace.Camera.CameraSubject = CPart
+	Char['Humanoid'].Sit = true
+	local BV = Instance.new('BodyVelocity', Char['HumanoidRootPart'])
+	BV.MaxForce = Vector3.new(1e5,1e5,1e5)
+	BV.Velocity = Vector3.new(0,-1e5,0)
+	BV.P = 1e5
+end
+
+function gat ()
+	fireclickdetector(game:GetService("Workspace").Terrain["_Game"].Admin.Regen.ClickDetector, 0)
+	wait(0.01)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-12.7096605, 8.62999916, 94.2826157, -0.999921501, -2.98075449e-08, 0.0125419069, -2.97182066e-08, 1, 7.3093811e-09, -0.0125419069, 6.93608504e-09, -0.999921501))
+	wait(0.01)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-16.6578312, 8.61442566, 94.2862549, -0.999505401, -7.70825679e-08, -0.0314528234, -7.69930182e-08, 1, -4.05809031e-09, 0.0314528234, -1.63443437e-09, -0.999505401))
+	wait(0.01)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-20.8331089, 8.62395477, 94.432251, -0.999682963, 1.03628132e-07, -0.0251875259, 1.03774184e-07, 1, -4.49199167e-09, 0.0251875259, -7.10438242e-09, -0.999682963))
+	wait(0.01)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-24.615078, 8.59564972, 94.0418854, -0.999683201, -9.74110534e-08, -0.0251754392, -9.73986332e-08, 1, -1.71898662e-09, 0.0251754392, 7.33612837e-10, -0.999683201))
+	wait(0.01)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-28.629425, 8.59974003, 94.0210342, -1.00000083, -9.73989458e-08, -2.68230215e-05, -9.73986332e-08, 1, -1.71898662e-09, 2.68230215e-05, -1.71638137e-09, -1.00000083))
+	wait(0.01)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-32.6574135, 8.62841797, 94.1386795, -0.999821842, -9.74138672e-08, -0.0188864321, -9.73987326e-08, 1, -1.7189723e-09, 0.0188864321, 1.2085212e-10, -0.999821842))
+	wait(0.01)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-36.8136482, 8.62999916, 94.2091827, -0.999287307, -1.9776738e-09, -0.0377426855, -2.0270885e-09, 1, 1.27097477e-09, 0.0377426855, 1.34657674e-09, -0.999287307))
+	wait(0.01)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-40.8000412, 8.62869072, 94.0551605, -0.999682367, -1.9944324e-09, -0.0251874477, -2.02708894e-09, 1, 1.27097477e-09, 0.0251874477, 1.32162881e-09, -0.999682367))
+	wait(0.01)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-44.4930801, 8.62999916, 94.3159561, -0.99982059, -2.00267958e-09, -0.0189193524, -2.02708894e-09, 1, 1.27097477e-09, 0.0189193524, 1.30909839e-09, -0.99982059))
+end
+
+function rbase ()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, 1, 0)
+	game:GetService'Players':Chat(("sit me"))
+	wait(1)
+	local Hitbox = Instance.new("Part")
+	Hitbox.Parent = game.Workspace
+	Hitbox.Name = "BitchTaco"
+	Hitbox.Transparency = 0
+	Hitbox.Color = Color3.new(1, 1, 1)
+	Hitbox.Size = Vector3.new(5, 1, 5)
+	Hitbox.Position = Vector3.new(0, 20, 0)
+	Hitbox.Material = "SmoothPlastic"
+	Hitbox.CanCollide = true
+	Hitbox.Anchored = true
+	Hitbox.Position = Vector3.new(0, 4, 0)
+	wait()
+	game:GetService'Players':Chat(("punish me"))
+	wait()
+	Hitbox:Destroy()
+	game:GetService'Players':Chat(("unpunish me"))
+	wait()
+	game:GetService'Players':Chat(("skydive me"))
+end
+--Function List End
+
+--[[ ---->>Commands<<----
+	--OWNER ABILITIES--
+[Owner Commands]
+;nopads - loop resets the admin pads, also plays ;m ussr
+;yespads - breaks loop reset admin pads
+;step - sets the delay in seconds in which you spam
+;getadmin - brings you to get admin. quicker than ;house
+;crash - will attempt to crash the game
+;rbase - will attempt to remove the baseplate
+;wl [player full username]- Enables marked commands above for the player mentioned
+;uwl					  - Disables anyone but you from using the script
+
+[Teleport Commands]
+;house - teleports you in the house
+;ohouse - teleports you on top of the house
+;reset - teleports you on the admin reset button
+;obby - teleports you to the finish of the fobby
+;spawn - teleports you to spawn
+
+[Emote Commands]
+;hmm
+;headtoss
+;armturbine
+;loophead
+;scream
+;raisehead
+;dab
+;laydown
+;crouch
+
+[Music Commands] --
+;m thunder
+;m spotlight
+;m carryon
+;m rip
+;m panini
+;m bacon
+;m heaven
+;m dre
+;m trains
+;m louis
+;m spectre
+;m force
+;m hello
+;m ily
+;m creeper
+;m kfc
+;m titanium
+;m rick
+;m mcu
+;m moonlight
+;m dancemonkey
+;m mc
+;m china
+;m ussr
+;m static
+;m copycat
+;m mimi
+;m imgay
+;m static
+;m fbi
+;m ph
+;m gun
+;m krabs
+;m kazoo
+;m uhoh
+;m mii
+;m wii
+;m gay
+;m remix
+;m alarm
+;m deathbed
+
+[Gear commands]
+;g [player] taco
+;g [player] inferno
+;g [player] guitar
+;g [player] bluster
+;g [player] water
+;g [player] paint
+;g [player] car
+;g [player] princess
+;g [player] bomb
+;g [player] railgun
+;g [player] jail
+;g [player] timesword
+;g [player] laser
+;g [player] revolver
+;btools
+
+[Special]
+;rejoin - Rejoins the same game!
+;step - will set the ammount of time in seconds to wait while spamming
+;cmds <<Disabled!!
+;unblindable - you can not be blinded anymore
+;regen - regens the admin pads
+;lag [player] - Respawn, freeze, ff jail and spam explodes player. Lag spike right after command executed
+;spam [command] 		  - spams a set command
+;spam [command]:[command] - using ":" colon, separate commands to
+                          - spam. you can then spam several commands
+						  - ;spam kill all:reset all:explode all
+
+
+
+
+--WHITELISTED PLAYER ABILITIES--
+[Music Commands]
+;m thunder
+;m spotlight
+;m carryon
+;m rip
+;m panini
+;m bacon
+;m heaven
+;m dre
+;m trains
+;m louis
+;m spectre
+;m force
+;m hello
+;m ily
+;m creeper
+;m kfc
+;m titanium
+;m rick
+;m mcu
+;m moonlight
+;m dancemonkey
+;m mc
+;m china
+;m ussr
+;m static
+;m copycat
+;m mimi
+;m imgay
+;m static
+;m fbi
+;m ph
+;m gun
+;m krabs
+;m kazoo
+;m uhoh
+;m mii
+;m wii
+;m gay
+;m remix
+;m alarm
+;m deathbed
+
+[Gear commands]
+;g [player] taco
+;g [player] inferno
+;g [player] guitar
+;g [player] bluster
+;g [player] water
+;g [player] paint
+;g [player] car
+;g [player] princess
+;g [player] bomb
+;g [player] railgun
+;g [player] jail
+;g [player] timesword
+;g [player] laser
+;g [player] revolver
+
+[Special]
+;step - will set the ammount of time in seconds to wait while spamming
+;cmds - displays a small UI with the commands listed
+;regen - regens the admin pads
+;spam [command] 		  - spams a set command
+;spam [command]:[command] - using ":" colon, separate commands to
+                          - spam. you can then spam several commands
+						  - ;spam kill all:reset all:explode all
+
+[KNOWN BUG(s)]
+1. While spamming several commands, after a minute it may start
+messing up the order of spamming
+2. Whilst spamming commands you may lose access to using other commands...
+--]]
+--[[ ---->>More Credits<----
+	Serenity Version 1.8.0
+
+	Made by --
+	Roblox - deathdru10
+	Discord - Shade4Real#8929
+
+	Edited by --
+	Roblox - fdyweiduygtw
+	Discord - Voltix#2172
+
+--]]
+--[[ ---->>FUQ<<----
+	Frequently Uttered Questions:
+	
+	Q: Is this script safe to use?
+	
+	A: Not all scripts are safe but this script is safe to use!
+	
+	Q: Will I get banned for using this script?
+	
+	A: No, The chances are too low.
+	
+	Q: Will this script work with my Free Exploit?
+	
+	A: Yes, it works with both paid and free exploits!
+	
+	Q: Can I get free robux?
+	
+	A: No, SIMP!
+--]]
